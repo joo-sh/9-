@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style type="text/css">
+    html{font-family: 'Noto Sans KR', sans;}
+
+ * {
+  box-sizing: border-box;
+  font-family: 'noto-sans', sans-serif;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+.stopwatch-container {
+  width: 700px;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 15px #000;
+}
+
+.display {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 84px;
+}
+
+.stopwatch-container button {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 60px 30px;
+  outline: none;
+  p
+}
+
+.start-btn {
+  background-color: springgreen;
+
+}
+
+.stop-btn {
+  background-color: red;
+}
+
+.reset-btn {
+  background-color: gray;
+}
+
+.start-btn:hover,
+.stop-btn:hover,
+.reset-btn:hover {
+  filter: brightness(85%);
+}
+
+span {
+  font-size: 30px;
+  margin: 0 260px 30px;
+}
+  </style>
+</head>
+<body>
+  <div class="stopwatch-container">
+      <h1 class="display">00:00</h1>
+    <button class="start-btn" type="button">시작</button>
+    <button class="stop-btn" type="button">그만</button>
+    <button class="reset-btn" type="button">기록</button>
+  </br>
+    <span>Time Lap</span>
+    <ul class="timelap-list">
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
